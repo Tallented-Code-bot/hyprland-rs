@@ -261,6 +261,8 @@ pub struct Client {
     /// When was this window last focused relatively to other windows? 0 for current, 1 previous, 2 previous before that, etc
     #[serde(rename = "focusHistoryID")]
     pub focus_history_id: i8,
+    /// The tags for this window
+    pub tags: Vec<String>
 }
 
 #[derive(Deserialize, Debug)]
